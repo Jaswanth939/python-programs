@@ -1,0 +1,6 @@
+sno=int(input('student number:')) 
+name=str(input('name:')) 
+gender=str(input('gender:')) 
+group=str(input('group:')) 
+address=input('address:') 
+phno=int(input('phone number:')) 
