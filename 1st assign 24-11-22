@@ -1,18 +1,9 @@
 a=int(input('enter a value:'))
-enter a value:100
 b=int(input('enter b value:'))
-enter b value:3
 print(a+b)
-103
 print(a-b)
-97
 print(a*b)
-300
 print(a/b)
-33.333333333333336
 print(a%b)
-1
 print(a//b)
-33
 print(a**b)
-1000000
