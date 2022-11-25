@@ -1,0 +1,6 @@
+list=[1,2,3,4,5]
+x=int(input('enter the element:'))
+if x in list:
+    print('given element is available')
+else:
+    print('given element is not available')
