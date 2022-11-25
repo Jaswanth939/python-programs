@@ -1,0 +1,6 @@
+list1=[1,0,-1,2,4,6,3,20]
+esum=0
+for n in list1:
+    if n%2==0:
+        esum=esum+n
+print('sum of even numbers in list=',esum)
