@@ -1,0 +1,5 @@
+a=int(input('enter a value:'))
+b=int(input('enter b valuue'))
+print('value of bitwise AND is ',a&b)
+print('value of bitwise OR is ',a|b)
+print('value of bitwise exclusive OR is ',a^b)
