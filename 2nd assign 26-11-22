@@ -12,7 +12,7 @@ print(a<<10)
 
 
 
-#program on bitwise operators using for loop
+#program on left shift operators using for loop
 
 '''
 
