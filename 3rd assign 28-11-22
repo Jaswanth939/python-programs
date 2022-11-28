@@ -1,0 +1,18 @@
+bal=1000
+amount=int(input('Enter amount:'))
+mb=amount+bal
+print('credited amount:',amount)
+print('main balance:',mb)
+
+
+            (or)
+
+
+bal=1000
+amount=int(input('Enter amount:'))
+if amount>0:
+    mb=amount+bal
+    print('credited amount:',amount)
+    print('main balance:',mb)
+else:
+    print('not valid')
