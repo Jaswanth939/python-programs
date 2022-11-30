@@ -1,0 +1,52 @@
+rice=2000
+oil=200
+milk=150
+bread=100
+egg=10
+cno=int(input('Enter customer number:'))
+cphno=int(input('Enter Customer Phone number:'))
+name=input('Enter your Name:')
+addr=input('Enter your Address:')
+riceq=int(input('How many rice packets you want:'))
+oilq=int(input('How many bottles of oil you want:'))
+milkq=int(input('How many bottles of milk you want:'))
+breadq=int(input('How many packets of bread you want:'))
+eggq=int(input('How many eggs you want:'))
+coupon=input('enter your coupon code in capital letters:')
+bill=(rice*riceq)+(oil*oilq)+(milk*milkq)+(bread*breadq)+(egg*eggq)
+if bill>3000:
+    tax=bill*15/100
+elif bill>2000:
+    tax=bill*10/100
+elif bill>1000:
+    tax=bill*7/100
+elif bill>500:
+    tax=bill*5/100
+else:
+    tax=100
+if coupon=='DIWALI':
+    if bill>=5000:
+        dis=bill*10/100
+    elif bill>=3000:
+        dis=bill*6/100
+    elif bill>=1000:
+        dis=bill*4/100
+    else:
+        dis=0
+if coupon=='CHRISMAS':
+    if bill>=3000:
+        dis=bill*20/100
+    elif bill>=2000:
+        dis=bill*10/100
+    elif bill>=1000:
+        dis=bill*5/100
+    else:
+        dis=0
+bill=tax+bill-dis
+print('customer number:',cno)
+print('customer phone number:',cphno)
+print('name:',name)
+print('address:',addr)
+print('tax=',tax)
+print('discount=',dis)
+print('bill=',bill)
