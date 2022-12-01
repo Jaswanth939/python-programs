@@ -1,0 +1,28 @@
+billno=int(input('enter bill number:'))
+date=int(input('enter date:'))
+name=input('enter your name')
+servno=int(input('enter service number:'))
+units=int(input('Enter the number of units consumed:'))
+if units>=0 and units<=30:
+    uc=1.9 #unit cost
+    cc=25 #customer charges
+elif units>=31 and units<=75:
+    uc=3
+    cc=30
+elif units>=76 and units<=125:
+    uc=4.5
+    cc=45
+elif units>=126 and units<=225:
+    uc=6
+    cc=50
+elif units>=226 and units<=400:
+    uc=8.75
+    cc=55
+else:
+    uc=9.75
+    cc=55
+bill=(units*uc)+cc
+print('units consumed:',units)
+print('unit cost according to the units:',uc)
+print('customer charges according to units:',cc)
+print('total bill is ',bill)
