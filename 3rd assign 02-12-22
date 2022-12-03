@@ -1,0 +1,32 @@
+#WAY-1
+def leap():
+    if a%400==0 or a%100!=0 and a%4==0:
+        print('Yes')
+    else:
+        print('No')
+a=int(input('enter a:'))
+leap()
+
+
+#WAY-2
+def leap(a):
+    if a%400==0 or a%100!=0 and a%4==0:
+        return "Yes"
+    else:
+        return "No"
+a=int(input('enter a:'))
+print(leap(a))
+
+
+
+#WAY-3
+def leap(a):
+    if a%400==0 or a%100!=0 and a%4==0:
+        return True
+    else:
+        return False
+a=int(input('enter a:'))
+if(leap(a)):
+    print('Yes')
+else:
+    print('No')
