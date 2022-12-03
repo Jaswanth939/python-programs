@@ -12,9 +12,9 @@ big()
 #WAY-2
 def big(a,b):
     if a>b:
-        print('a is big')
+        return "a is big"
     else:
-        print('b is big')
+        return "b is big"
 a=int(input('enter a:'))
 b=int(input('enter b:'))
 print(big(a,b))
