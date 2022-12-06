@@ -1,0 +1,8 @@
+list=[23,34,56,20,35,167]
+list.sort()
+min=list[0]
+max=list[5]
+diff=max-min
+print('largest element is ',max)
+print('smallest element is ',min)
+print('difference is ',diff)
