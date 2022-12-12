@@ -1,0 +1,5 @@
+n=int(input())
+x=list(map(int,input().split()))
+print('x[0] value is',x[0])
+print('x[2] value is',x[2])
+print('x[4] value is',x[4])
