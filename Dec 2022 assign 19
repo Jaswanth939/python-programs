@@ -1,0 +1,9 @@
+#Write a program to print square root of the given number.  if square root is greater than 10,print 'Hello' otheerwise print 'Hi'
+import math
+n=float(input('Enter any element:'))
+sqrt=math.sqrt(n)
+print('Square root of given number is ',sqrt)
+if sqrt>10:
+    print('Hello')
+else:
+    print('Hi')
