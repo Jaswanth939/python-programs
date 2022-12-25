@@ -1,0 +1,12 @@
+#write a program to print sum of n fibonacci series?
+n=int(input("Please Enter the Fibonacci Number Range = "))
+first=0
+second=1
+Sum=0
+for i in range(0,n):
+    print(first,end='  ')
+    Sum=Sum+first
+    Next=first+second
+    first=second
+    second=Next
+print("\nThe Sum of Fibonacci Series Numbers = %d" %Sum)
