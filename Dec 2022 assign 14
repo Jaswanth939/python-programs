@@ -1,0 +1,18 @@
+#program to print happy numbers in given range
+def check_happy(number):
+  remainder = 0
+  happy_num = 0;    
+  while(number > 0):    
+    remainder = number%10;    
+    happy_num = happy_num + (remainder*remainder);    
+    number = number//10;
+  return happy_num;
+
+lower = int(input("ENTER LOWEST VALUE : "))
+upper = int(input("ENTER HIGHEST VALUE : "))
+for i in range(lower,upper+1):
+  happy_num = i
+  while(happy_num != 1 and happy_num != 4):
+    happy_num = check_happy(happy_num)
+  if(happy_num == 1):
+    print(i,end=" ")
