@@ -1,0 +1,6 @@
+startyear=int(input('Enter starting year:'))
+endyear=int(input('Enter ending year:'))
+for i in range(startyear,endyear):
+    if startyear%4==0:
+        print(startyear)
+    startyear=startyear+1
