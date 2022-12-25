@@ -1,0 +1,12 @@
+#write a program to count n prime in given range?
+start=int(input("Enter the starting number: "))  
+end=int(input("Enter the ending number: "))
+count=0
+for num in range (start+1,end+1):  
+    if num>1:  
+        for i in range (2,num):  
+            if num%i==0:  
+                break  
+        else:  
+            count=count+1
+print(count)
