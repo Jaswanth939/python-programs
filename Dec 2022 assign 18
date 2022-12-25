@@ -1,0 +1,4 @@
+#write a progam to arrange elements in sequential order?
+l=[4,2,5,6,3,8,9]
+l.sort()
+print(l)
