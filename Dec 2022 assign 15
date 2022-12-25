@@ -1,0 +1,12 @@
+#write a program to print unique single numberfor the duplicate list?
+numbers=list(map(int,input().split()))
+def get_unique_numbers(numbers):
+    unique = []
+    
+    for number in numbers:
+        if number in unique:
+            continue
+        else:
+            unique.append(number)
+    return unique
+print(get_unique_numbers(numbers))
