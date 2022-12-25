@@ -1,0 +1,8 @@
+#write a program to print difference between max and min number from the given list
+n=int(input('Enter no of elements:'))
+l=[]
+for i in range(0,n):
+    x=int(input('Enter numbers:'))
+    l.append(x)
+    l.sort()
+print('Difference:',max(l)-min(l))
