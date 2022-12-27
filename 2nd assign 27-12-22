@@ -1,0 +1,9 @@
+def get_index_positions(list_of_elems, element):
+    index_pos_list = []
+    for i in range(len(list_of_elems)):
+        if list_of_elems[i] == element:
+            index_pos_list.append(i)
+    return index_pos_list
+list_of_elems = list(map(int,input().split()))
+index_pos_list = get_index_positions(list_of_elems,int(input('enter the element ')))
+print('it is found at index', index_pos_list)
