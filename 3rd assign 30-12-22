@@ -1,0 +1,8 @@
+#progam to print 4 and 5 multiples in given range using list comprehensation
+n=int(input())
+l=[i for  i in range(1,n+1) if i%4==0]
+print('Multiples of 4 are')
+print(l)
+l=[j for j in range(1,n+1) if j%5==0]
+print('Multiples of 5 are')
+print(l)
