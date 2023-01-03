@@ -1,0 +1,21 @@
+#write a program to print difference between left diagonal and right diagonal
+n=int(input())
+A=[]
+sum1=0
+diff=0
+for i in range(0,n):
+    l=[]
+    for j in range(0,n):
+        x=int(input())
+        l.append(x)
+    A.append(l)
+for i in range(n):
+    for j in range(n):
+        if i==j:
+            sum1=sum1+A[i][j]
+        if i+j==n-1:
+            diff=diff+A[i][j]
+print('left diagonal is',sum1)
+print('right diagonal is',diff)
+difference=sum1-diff
+print(difference)
