@@ -1,0 +1,23 @@
+#write a program to find max element from primary and secondary diagnals
+n=int(input())
+A=[]
+sum1=[]
+sum2=[]
+sum3=[]
+for i in range(0,n):
+    l=[]
+    for j in range(0,n):
+        x=int(input())
+        l.append(x)
+    A.append(l)
+for i in range(n):
+    for j in range(n):
+        if i==j:
+            sum1.append(A[i][j])
+        if i+j==n-1:
+            sum2.append(A[i][j])
+print('primary diagonal values=',sum1)
+print('secondary diagoanal values=',sum2)
+sum3=sum1+sum2
+sum3.sort()
+print('the maximum element is',sum3[-1])
