@@ -1,0 +1,13 @@
+#write a program to print your name like this
+#Ex:
+#input: Teja
+#output:
+#T
+#TE
+#TEJ
+#TEJA
+n=int(input())
+s=input()
+for i in range(0,n+1):
+    print(s[0:i])
+    i=i+1
