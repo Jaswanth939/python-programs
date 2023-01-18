@@ -1,5 +1,5 @@
 def convertime(s):
-    h=int(s[0:2])#it stores hour time
+    h=int(s[0:2])
     if s[8]=='A':
         if h==12:
             return '00'+s[2:8]
