@@ -1,0 +1,10 @@
+#write program to remove vowels from the given string.
+s=input()
+for i in s:
+    if 'a' in s or 'e' in s or 'i' in s or 'o' in s or 'u' in s:
+        s=s.replace('a','')
+        s=s.replace('e','')
+        s=s.replace('i','')
+        s=s.replace('o','')
+        s=s.replace('u','')
+        print(s)
